@@ -5,7 +5,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 header {
@@ -15,7 +15,7 @@ header {
 
 header h1{
     display: inline-block;
-    padding: 16px 24px;
+    padding: 16px 0;
     color: #05386B;
 }
 
@@ -29,9 +29,14 @@ header ul li {
     font-style: oblique;
 }
 
+
 a {
     text-decoration: none;
-    color: #05386B;
+    color: #05386B;  
+}
+
+a :hover {
+    color: red;
 }
 
 .container {
@@ -48,10 +53,16 @@ a {
 .mobile {
     float: right;
     display: none;
-    padding: 18px;
+    padding: 25px 0;
     cursor: pointer;
     color: #05386B;
 }
+
+.mobile:hover {
+    color: red;
+    -webkit-transition-duration: 0.5s;
+}
+
 #check {
     display: none;
 }
@@ -70,16 +81,28 @@ a {
     transition: .3s;
 }
 
+.sidebar .mobile img {
+    width: 40px;
+    margin-top: -8px;
+    margin-right: 8px;
+    color: white;
+}
+
+.sidebar ul {
+    margin-top: 60px;
+}
+
 .sidebar ul li {
-    padding: 24px;
+    padding: 15px;
 }
 
 .sidebar ul li:hover {
-    background-color: rgb(207, 191, 198);
+    background-color: rgba(214, 199, 182, 0.705);
 }
 
 .sidebar ul li a{
     color: white;
+    display: block;
 }
 
 #check:checked ~ .sidebar {
@@ -105,10 +128,6 @@ section {
 #banner h2,
 #banner p {
     color:  rgb(5, 56, 107);
-}
-
-#banner-kiri {
-    padding-left: 24px;
 }
 
 section h3 {
@@ -258,7 +277,6 @@ section h3 {
 .col-motivasi p {
     text-align:justify;
     margin: 0 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .harapan {
@@ -276,9 +294,8 @@ section h3 {
 }
 
 .col-harapan p {
-    text-align:justify;
+    text-align:left;
     margin: 0 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sosmed {
@@ -305,6 +322,12 @@ section h3 {
 .col-sosmed table img{
     height: 100px; 
 }
+
+.col-sosmed table a:hover img {
+    transform: scale(1.1);
+    -webkit-transition-duration: 0.5s;
+}
+
 
 footer{
     background-color: rgb(12, 11, 11) ;
