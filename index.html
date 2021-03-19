@@ -4,136 +4,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/icon.png">
-    <title>Praktikum 2 (CV)</title>
+    <title>CV || Prasetyo N.H</title>
 </head>
+<body>
 
-<body style="background-color:rgb(245, 61, 61);">
-    <center>
-    
-<table style=" border-radius: 4px; border-style: groove; border-width: 5px; background-color: white; font-size:large;" width="900" >
-    <tr>
+    <!--sidebar-->
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#profil">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#sosmed">Social Media</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="container">
+            <h1 >My Resume</h1>
+            <ul>
+                <li><a href="#profil">Profile</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#sosmed">Social Media</a></li>
+            </ul>
+
+            <label for="check" class="mobile"><b>Menu </b></label>
+
+
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner-kiri">
+                <img src="image/fotoku.jpg">
+            <p style="margin-bottom: 10px; font-size: 35px;"><b>Prasetyo Nur Hidayat</b></p>
+            <p style="font-size: 25px;"><b>Hi...</b></p>
+            <p style="font-size: 18px;">Saya adalah seorang mahasiswa Teknologi Informasi</p>
+            </div>            
+        </div>
+    </section>
+
+
+    <section id=profil> 
+        <h3>Data Pribadi</h3>
+            <div class="data-diri">
+                <table>
+                    <tr>
+                        <td><img src="image/nameicon.png" align=center></td>
+                        <td>: Prasetyo Nur Hidayat</td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/birthicon.png" align=center></td>
+                        <td>: Banjarnegara, 8 Aug 2001</td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/addressicon.png" align=center></td>
+                        <td>: Banjarnegara, Central Java</td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/emailicon.png"align=center></td>
+                        <td>: prasetyonurhidayat@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+
+    <section id="education">
+        <h3>Riwayat Pendidikan</h3>
+            <div class="pendidikan">
+                <div class="umy">
+                    <a href="https://www.umy.ac.id/"><b>Universitas Muhammadiyah Yogyakarta</b></a>
+                    <br>
+                    Teknologi Informasi
+                </div>
+                <br>
+                <div class="sma">
+                    <a href="https://sman1klampok.sch.id/"><b>SMA N 1 Purwareja Klampok</b></a>
+                    <br>
+                    MIPA
+                </div>
+            </div>
+    </section>
+
+    <section class="skill">
+        <h3>Skill</h3>
+            <div class="col-skill-pc">
+                <table cellspacing=10>
+                    <tr>
+                        <td><img src="image/office.png" alt=""></td>
+                        <td><img src="image/ps.png" alt=""></td>
+                        <td><img src="image/html.png" alt=""></td>
+                        <td><img src="image/cssicon.png" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-skill-mobile">
+                <table cellspacing=10>
+                    <tr>
+                        <td><img src="image/office.png" alt=""></td>
+                        <td><img src="image/ps.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/html.png" alt=""></td>
+                        <td><img src="image/cssicon.png" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+
+    <section class="sertifikat">
+        <h3>Certificates</h3>
+            <div class="col-sertifikat">
+                <div class="certi1">
+                    <b>Web Application Development Fundamental with C#</b>
+                    <br>
+                    Inixindo Academy Program
+                </div>
+                <br>
+                <div class="certi2">
+                    <b>Software Development Fundamental with C#</b>
+                    <br>
+                    Inixindo Academy Program
+                </div>
+
+            </div>
+    </section>
+
+    <section class="motivasi">
+        <h3>Motivasi</h3>
+            <div class="col-motivasi">
+                <p>
+                    &nbsp; Motivasi saya masuk IT adalah karena saya tertarik dalam dunia teknologi, sehingga saya ingin mengembangkan minat dan bakat saya dalam dunia teknologi. Selain itu lapangan pekerjaan untuk lulusan IT kedepannya masih dibutuhkan karena teknologi akan terus berkembang.
+                </p>
+            </div>
         
-        <td align=left valign="top" style="font-size: 30px; padding-right: 5px;">
-            <b style="font-size: 55px;">Curriculum Vitae</b>
-            
-        </td>
-        <td style="width: 700px;" align="right" rowspan="2">
-            <img style="padding-bottom: 25px; padding-right: 10px;" src="image/fotoku.jpg" alt="Prasetyo Nur Hidayat" width="150px" height="190px">
-        </td>
-    </tr>
+    </section>
 
-    <!-- DATA PRIBADI-->
-    <tr>
-        <td colspan="2" style="text-align: left;"><h2>Data Pribadi <hr width="98%" size="5px" color="black"></h2></td>
-    </tr> 
-        <tr>
-            <td>Nama</td>
-            <td>: Prasetyo Nur Hidayat</td>
-        </tr>
-        <tr>
-            <td>Tempat, Tanggal Lahir</td>
-            <td>: Banjarnegara, 8 Agustus 2001</td>
-        </tr>
-        <tr>
-            <td>Jenis Kelamin</td>
-            <td>: Laki-laki</td>
-        </tr>
-        <tr>
-            <td>Agama</td>
-            <td>: Islam</td>
-        </tr>
-        <tr>
-            <td>Alamat</td>
-            <td>: Desa Purwasaba, Kec. Mandiraja, Kab. Banjarnegara, Jawa Tengah</td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td>: prasetyonurhidayat@gmail.com</td>
-        </tr>
-
-        <!--RIWAYAT PENDIDIKAN-->
-    <tr>
-        <td colspan="2" style="text-align: left;"><h2> Riwayat Pendidikan <hr width="98%" size="5px" color="black"></h2></td>
-    </tr>
-        <tr>
-            <td>2007 - 2013</td>
-            <td>: SD Negeri 4 Purwasaba</td>
-        </tr>
-        <tr>
-            <td>2013 - 2016</td>
-            <td>: SMP Negeri 1 Purwareja Klampok</td>
-        </tr>
-        <tr>
-            <td>2016 - 2019</td>
-            <td>: SMA Negeri 1 Purwareja Klampok</td>
-        </tr>
-        <tr>
-            <td>2019 - Sekarang</td>
-            <td>: Universitas Muhammadiyah Yogyakarta</td>
-        </tr>
-
-        <!--SKILL-->
-    <tr>
-        <td colspan="2" style="text-align: left;"><h2>Skill <hr width="98%" size="5px" color="black"></h2></td>
-    </tr>
-        <tr>
-            <td colspan="2">
-                <li>Microsoft Office</li>
-                <li>Photoshop </li>
-                <li>UI/UX Design</li>
-            </td>
-        </tr>
-
-        <!--MOTIVASI-->
-    <tr>
-        <td colspan="2" style="text-align: left;"><h2>Motivasi Masuk TI <hr width="98%" size="5px" color="black"></h2></td>
-    </tr>
-        <tr>
-            <td style="text-align: justify;" colspan="2">
-                &nbsp; Motivasi saya Masuk TI adalah ketika saya lulus SMA, saya mulai berpikir tentang bidang apa yang mempunyai prospek kerja besar yang akan berkembang pesat di indonesia pada 4-5 tahun yang akan datang. Saya searching, dan saya menemukan suatu artikel yang mengatakan bahwa Teknik Informatika lah yang mempunyai Prospek besar, khusunya pada era modern ini yang perkembangan teknologi sangat pesat, jadi hal tersebut akan berimbas pada sarjana TI. Jadi saya memilih untuk masuk jurusan TI. Selain itu saya juga tertarik dalam dunia teknologi.
-            </td>
-        </tr>
-
-        <!--HARAPAN-->
-    <tr>
-        <td colspan="2" style="text-align: left;"><h2>Harapan Setelah Lulus <hr width="98%" size="5px" color="black"></h2></td>
-    </tr>
-        <tr>
-            <td style="text-align:justify;" colspan="2">
-               &nbsp; Harapan saya setelah lulus adalah dapat langsung bekerja di perusahaan atau startup terbaik di Indonesia sebagai posisi yang diinginkan. 
-            </td>
-        </tr>
-
-        <!--SOSMED-->
-    <tr>
-        <td colspan="2" style="text-align: left;"><h2>Sosial Media <hr width="98%" size="5px" color="black"></h2></td>
-    </tr>
-        <tr>
-            <td colspan="2"> 
-                <a href="https://www.facebook.com/prasetyonurhidayat8">
-                    <img src="image/fb.png"  style="float: left; margin-right: 10px;" width="40" height="40" align=center>
-                </a>
-                <p style="margin-top: 6px;">facebook.com/prasetyonurhidayat8</p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2"> 
-                <a href="https://www.instagram.com/prasetyonh_/">
-                    <img src="image/ig.png"  style="float: left; margin-right: 10px;" width="40" height="40" align=center>
-                </a>
-                <p style="margin-top: 6px;">instagram.com/prasetyonh_</p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2"> 
-                <a href="https://twitter.com/Prasetyonh_">
-                    <img src="image/twitter.png"  style="float: left; margin-right: 10px;" width="40" height="40" align=center>
-                </a>
-                <p style="margin-top: 6px;">twitter.com/Prasetyonh_</p>
-        </tr>
+    <section class="harapan">
+        <h3>Harapan</h3>
+            <div class="col-harapan">
+                <p>
+                    &nbsp; Harapan saya setelah lulus adalah dapat langsung bekerja di perusahaan besar sebagai posisi yang diinginkan.
+                </p>
+            </div>
         
-</table></center>
-    
+    </section>
+
+    <section id="sosmed">
+        <h3>Social Media</h3>
+            <div class="col-sosmed">
+                <table> 
+                    <tr></tr>
+                        <td>
+                            <a href="https://www.instagram.com/prasetyonh_/">
+                                <img src="image/igicon.png" alt="">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.facebook.com/prasetyonurhidayat8/">
+                                <img src="image/fbicon.png" alt="">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://twitter.com/Prasetyonh_">
+                                <img src="image/twittericon.png" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+
+    <footer>
+        <p>Prasetyo Nur Hidayat @ 2021</p>
+    </footer>
+
+
+
 </body>
 </html>
