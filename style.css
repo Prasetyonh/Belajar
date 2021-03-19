@@ -66,11 +66,6 @@ a :hover {
 #check {
     display: none;
 }
-
-.sidebar::after {
-    display: none;
-}
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -78,7 +73,7 @@ a :hover {
     left: -290px;
     width: 290px;
     background-color: rgb(5, 56, 107, .9);
-    transition: .3s;
+    transition: .7s;
 }
 
 .sidebar .mobile img {
@@ -89,7 +84,7 @@ a :hover {
 }
 
 .sidebar ul {
-    margin-top: 60px;
+    margin-top: 65px;
 }
 
 .sidebar ul li {
@@ -98,9 +93,10 @@ a :hover {
 
 .sidebar ul li:hover {
     background-color: rgba(214, 199, 182, 0.705);
+    transition: .5s;
 }
 
-.sidebar ul li a{
+.sidebar ul a li {
     color: white;
     display: block;
 }
@@ -340,56 +336,28 @@ footer p {
     padding-top:15px;
 }
 
-@media (max-width:600px){
+@media (max-width:700px){
     .mobile {
         display: block;
     }
     header ul {
         display: none;
     }
-
     .data-diri {
-    background-color: whitesmoke;
-    margin-left: auto;
-    margin-right: auto;
     width: 320px;
-    padding: 15px 0;
-    box-shadow: 0 3px 5px grey;
     }
-
     .pendidikan {
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
     width: 320px;
-    padding: 15px 0;
-    box-shadow: 0 3px 5px grey;   
     }
-
     .umy {
-        background-color: whitesmoke;
-        margin-left: auto;
-        margin-right: auto;
         width: 80%;
-        box-shadow: 0 3px 5px grey;
-        padding: 5px 0;
-        text-align: center;
     }
-
     .sma {
-        background-color: whitesmoke;
-        margin-left: auto;
-        margin-right: auto;
         width: 80%;
-        box-shadow: 0 3px 5px grey;
-        padding: 5px 0;
-        text-align: center;
     }
-
     .col-skill-pc{
         display: none;
     }
-
     .col-skill-mobile {
         background-color: whitesmoke;
         margin-left: auto;
@@ -399,94 +367,82 @@ footer p {
         box-shadow: 0 3px 5px grey;
         display: block;
     }
-
     .col-skill-mobile table {
         width: 150px;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
     }
-
     .col-skill-mobile table img{
         height: 60px; 
     }
-
     .col-sertifikat {
-        background-color: white;
-        margin-left: auto;
-        margin-right: auto;
         width: 320px;
-        padding: 15px 0;
-        box-shadow: 0 3px 5px grey;   
-        }
-    
-        .certi1 {
-            background-color: whitesmoke;
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            box-shadow: 0 3px 5px grey;
-            padding: 5px 0;
-            text-align: center;
-        }
-    
-        .certi2 {
-            background-color: whitesmoke;
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            box-shadow: 0 3px 5px grey;
-            padding: 5px 0;
-            text-align: center;
-        }
-
-    .col-motivasi {
-        background-color: whitesmoke;
-        margin-left: auto;
-        margin-right: auto;
-        width: 320px;
-        box-shadow: 0 3px 5px grey;
-        padding: 20px 0;
     }
-
+    .certi1 {
+        width: 80%;
+    }
+    .certi2 {
+        width: 80%;
+    }
+    .col-motivasi {
+        width: 320px;
+    }
     .col-motivasi p {
         text-align:left;
         margin: 0 20px;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
-
     .col-harapan {
-        background-color: white;
-        margin-left: auto;
-        margin-right: auto;
         width: 320px;
-        box-shadow: 0 3px 5px grey;
-        padding: 20px 0;
     }
-
     .col-harapan p {
         text-align:left;
         margin: 0 20px;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
-
     .col-sosmed {
-        background-color: whitesmoke;
-        margin-left: auto;
-        margin-right: auto;
         width: 320px;
-        box-shadow: 0 3px 5px grey;
         padding: 10px 0;    
     }
-    
     .col-sosmed table {
         width: 250px;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
     }
-    
     .col-sosmed table img{
         height: 50px; 
+    }
+}
+
+@media (max-width:320px) {
+
+    .sidebar {
+        width: 250px;
+    }
+    .data-diri {
+        width: 300px;
+    }  
+    .pendidikan {    
+        width: 300px; 
+    }
+    .col-skill-mobile {
+        width: 300px;
+    }
+    .col-skill-mobile table {
+        width: 150px;
+    }
+    .col-skill-mobile table img {
+        height: 55px;
+    }
+    .col-sertifikat {
+        width: 300px;
+    }
+    .col-motivasi {
+        width: 300px;
+    }
+    .col-harapan {
+        width: 300px;
+    }
+    .col-sosmed {
+        width: 300px;
     }
 }
