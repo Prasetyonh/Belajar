@@ -109,7 +109,7 @@ section {
 }
 
 #banner img {
-    width: 100px;
+    width: 150px;
     border-radius: 10px;
     box-shadow: 0 1px 2px ;
     margin-bottom: 10px;
@@ -356,6 +356,12 @@ color: black;
 
 
 @media (max-width:700px){
+    #banner img {
+        width: 120px;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px ;
+        margin-bottom: 10px;
+    }
     .mobile {
         display: block;
     }
