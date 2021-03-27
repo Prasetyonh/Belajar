@@ -330,6 +330,31 @@ footer p {
     padding-top:15px;
 }
 
+#project {
+    padding: 50px 0px 80px 0px;
+    background-color: white;
+}
+
+.proyek {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 90px;
+}
+
+.proyek img {
+    width: 100%;
+}
+
+.proyek span {
+font-size: 30px;
+color: black;
+}
+
+
 @media (max-width:700px){
     .mobile {
         display: block;
