@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+header {
+    height: 70px;
+    background-color: whitesmoke;
+}
+
+header h1{
+    display: inline-block;
+    padding: 16px 0;
+    color: #05386B;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    padding: 24px;
+    display: inline-block;
+    font-style: oblique;
+}
+
+
+a {
+    text-decoration: none;
+    color: #05386B;  
+}
+a :hover {
+    color: red;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.mobile {
+    float: right;
+    display: none;
+    padding: 25px 0;
+    cursor: pointer;
+    color: #05386B;
+}
+
+.mobile:hover {
+    color: red;
+    -webkit-transition-duration: 0.5s;
+}
+
+#check {
+    display: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -290px;
+    width: 290px;
+    background-color: rgb(5, 56, 107, .9);
+    transition: .7s;
+}
+
+.sidebar .mobile img {
+    width: 40px;
+    margin-top: -8px;
+    margin-right: 8px;
+    color: white;
+}
+
+.sidebar ul {
+    margin-top: 65px;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li:hover {
+    background-color: rgba(214, 199, 182, 0.705);
+    transition: .5s;
+}
+
+.sidebar ul a li {
+    color: white;
+    display: block;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#banner {
+    background-color:rgb(92, 219, 149) ;
+    padding: 100px 0px 150px 0px; 
+}
+
+section {
+    padding: 50px 0;
+}
+
+#banner img {
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px ;
+    margin-bottom: 10px;
+}
+
+#banner h2,
+#banner p {
+    color:  rgb(5, 56, 107);
+}
+
+section h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+#project {
+    padding: 50px 0px 80px 0px;
+    background-color: white;
+}
+
+.proyek {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 90px;
+}
+
+.proyek img {
+    width: 100%;
+}
+.proyek a:hover img {
+    transform: scale(1.05);
+}
+
+.proyek span {
+font-size: 30px;
+color: black;
+}
+
+@media (max-width:700px){
+    .mobile {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+    .proyek span {
+        font-size: 20px;
+    }
