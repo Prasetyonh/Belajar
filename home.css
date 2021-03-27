@@ -96,7 +96,7 @@ a :hover {
     left: 0;
 }
 #banner {
-    background-color:rgb(92, 219, 149) ;
+    background-color:coral ;
     padding: 100px 0px 150px 0px; 
 }
 
@@ -157,5 +157,6 @@ color: black;
         display: none;
     }
     .proyek span {
-        font-size: 20px;
-    }
+        font-size: 15px;
+
+}
