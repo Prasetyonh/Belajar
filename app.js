@@ -1,21 +1,21 @@
 let namahari = ['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu']
 
-function setWaktu(){
+function setTime(){
     let date = new Date()
-    let jam = date.getHours().toLocaleString('id-ID',{minimumIntegerDigits: 2})
-    let menit = date.getMinutes().toLocaleString('id-ID',{minimumIntegerDigits: 2})
-    let detik = date.getSeconds().toLocaleString('id-ID',{minimumIntegerDigits: 2})
-    let tgl = date.getDate().toLocaleString('id-ID',{minimumIntegerDigits: 2})
-    let bulan = date.toLocaleString('id-ID', { month : 'long' })
-    let tahun = date.getFullYear()
+    let hours = date.getHours().toLocaleString('id-ID',{minimumIntegerDigits: 2})
+    let minutes = date.getMinutes().toLocaleString('id-ID',{minimumIntegerDigits: 2})
+    let second = date.getSeconds().toLocaleString('id-ID',{minimumIntegerDigits: 2})
+    let day = date.getDate().toLocaleString('id-ID',{minimumIntegerDigits: 2})
+    let month = date.toLocaleString('id-ID', { month : 'long' })
+    let year = date.getFullYear()
 
-    let setJam = jam + " : " +menit+" : "+detik
-    const setTanggal = namahari[date.getDay()]+', '+ tgl+" "+bulan+" "+tahun
+    let setJam = hours + " : " +minutes+" : "+second
+    const setDate = namahari[date.getDay()]+', '+ day+" "+month+" "+year
 
-    document.getElementById('jam').innerHTML = setJam
-    document.getElementById('tanggal').innerHTML = setTanggal
+    document.getElementById('hours').innerHTML = setJam
+    document.getElementById('tanggal').innerHTML = setDate
 
-    setTimeout('setWaktu()',1000)
+    setTimeout('setTime()',1000)
 }
 
-setWaktu()
+setTime()
