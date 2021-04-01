@@ -6,7 +6,7 @@
 
 header {
     height: 62px;
-    background-image: url("image/bgrain.jpg");
+    background-image: url("../image/bgrain.jpg");
     background-size: cover;
 }
 
@@ -39,7 +39,7 @@ a {
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    background-image: url("image/bgrain.jpg");
+    background-image: url("../image/bgrain.jpg");
     background-size:cover;
 }
 
