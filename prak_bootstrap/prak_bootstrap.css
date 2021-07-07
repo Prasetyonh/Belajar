@@ -1,3 +1,10 @@
+.navbar{
+
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
 .hero-banner {
     background-image:url("../image/coffee-banner.jpg");
     object-fit: cover;
